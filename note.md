@@ -16,3 +16,22 @@
    7. 不要随便地将构造函数和析构函数的定义体放在类声明中
 4. #define HZ_CORE_ERROR(...) ::Hazel::Log::GetCoreLogger()->error(__VA_ARGS__)表示在全局空间中查找宏
 5. cmake、premake配置文件的好处：不用每次都手动配置IDE设置或者makefile文件，可以自动生成ide的工程文件或者makefile文件
+
+## Git 技巧
+### git submodule
+用于在项目中添加其他git项目作为依赖，并保持对其他项目更新的追踪
+<br/>
+
+```cmd
+git submodule add -b <url> <local_path>    # 添加子模块并切换到子模块指定分支
+```
+
+```cmd
+git submodule deinit <name>    # 删除子模块文件夹下内容
+```
+
+```cmd
+git rm <name>    # 删除子模块配置文件
+```
+
+最后，若要彻底删除子模块，还应该删除.git/module目录下的子模块缓存

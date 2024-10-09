@@ -15,7 +15,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 
 -- -- Include premake5.lua in glfw
--- include "Hazel/vendor/GLFW"
+include "Hazel/vendor/GLFW"
 
 project "Hazel"
 	location "Hazel"
