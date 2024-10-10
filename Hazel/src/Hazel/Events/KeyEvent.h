@@ -11,7 +11,6 @@ namespace Hazel {
 
 		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
 	protected:
-		/* protected的构造函数能够防止基类被实例化 */
 		KeyEvent(int keycode)
 			: m_KeyCode(keycode) {}
 
@@ -52,5 +51,21 @@ namespace Hazel {
 		}
 
 		EVENT_CLASS_TYPE(KeyReleased)
+	};
+
+	class HAZEL_API KeyTypedEvent : public KeyEvent
+	{
+	public:
+		KeyTypedEvent(int keycode)
+			: KeyEvent(keycode) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyTypedEvent: " << m_KeyCode;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyTyped)
 	};
 }
