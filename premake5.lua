@@ -14,7 +14,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 
--- -- Include premake5.lua in glfw
+-- Include premake5.lua in glfw
 include "Hazel/vendor/GLFW"
 
 project "Hazel"

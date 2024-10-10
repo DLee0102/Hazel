@@ -34,4 +34,4 @@ git submodule deinit <name>    # 删除子模块文件夹下内容
 git rm <name>    # 删除子模块配置文件
 ```
 
-最后，若要彻底删除子模块，还应该删除.git/module目录下的子模块缓存
+最后，若要彻底删除子模块，还应该删除.git/module目录下的子模块缓存 
