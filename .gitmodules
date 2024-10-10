@@ -3,5 +3,4 @@
 	url = https://github.com/gabime/spdlog
 [submodule "Hazel/vendor/GLFW"]
 	path = Hazel/vendor/GLFW
-	url = https://github.com/TheCherno/glfw.git
-	branch = dev
+	url = https://github.com/DLee0102/glfw.git
